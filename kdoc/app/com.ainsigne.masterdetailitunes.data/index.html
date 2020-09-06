@@ -1,0 +1,92 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>com.ainsigne.masterdetailitunes.data - app</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">app</a>&nbsp;/&nbsp;<a href="./index.html">com.ainsigne.masterdetailitunes.data</a><br/>
+<br/>
+<h2>Package com.ainsigne.masterdetailitunes.data</h2>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-app-database/index.html">AppDatabase</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">AppDatabase</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">RoomDatabase</span></code>
+<p>The Room database for this app</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-converters/index.html">Converters</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">Converters</span></code>
+<p>Type converters to allow Room to reference complex data types.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-itunes-item/index.html">ItunesItem</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ItunesItem</span></code>
+<p>ItunesItem class for representing the itunes track properties</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-itunes-item-dao/index.html">ItunesItemDao</a></p>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">ItunesItemDao</span></code>
+<p>The Data Access Object for the <a href="-itunes-item/index.html">ItunesItem</a> class.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-itunes-items-repository/index.html">ItunesItemsRepository</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ItunesItemsRepository</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../com.ainsigne.masterdetailitunes.interfaces/-item-repository/index.html"><span class="identifier">ItemRepository</span></a></code>
+<p>Repository module for handling data operations for the <a href="-itunes-item/index.html">ItunesItem</a>.
+Repository pattern is excellent for abstracting the data access used.
+In this case we only know that we are passing parameters and info
+We don't know how it is saved</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-itunes-result/index.html">ItunesResult</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ItunesResult</span></code>
+<p>ItunesResult class representing the response from retrofit</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-itunes-search/index.html">ItunesSearch</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ItunesSearch</span></code>
+<p>ItunesSearch class represents the query made with query, media and country parameter</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-itunes-search-dao/index.html">ItunesSearchDao</a></p>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">ItunesSearchDao</span></code>
+<p>The Data Access Object for the <a href="-itunes-search/index.html">ItunesSearch</a> class.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

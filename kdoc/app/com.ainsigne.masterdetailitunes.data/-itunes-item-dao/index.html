@@ -1,0 +1,64 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ItunesItemDao - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.ainsigne.masterdetailitunes.data</a>&nbsp;/&nbsp;<a href="./index.html">ItunesItemDao</a><br/>
+<br/>
+<h1>ItunesItemDao</h1>
+<code><span class="keyword">interface </span><span class="identifier">ItunesItemDao</span></code>
+<p>The Data Access Object for the <a href="../-itunes-item/index.html">ItunesItem</a> class.</p>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="get-itunes-item.html">getItunesItem</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getItunesItem</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.masterdetailitunes.data.ItunesItemDao$getItunesItem(kotlin.String)/itunesName_">itunesName_</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="../-itunes-item/index.html"><span class="identifier">ItunesItem</span></a><span class="symbol">&gt;</span></code>
+<p>Returns saved itune item identified through its trackName</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-itunes-item-from-id.html">getItunesItemFromId</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getItunesItemFromId</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.masterdetailitunes.data.ItunesItemDao$getItunesItemFromId(kotlin.String)/itunesId_">itunesId_</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="../-itunes-item/index.html"><span class="identifier">ItunesItem</span></a><span class="symbol">&gt;</span></code>
+<p>Returns saved itune item identified through its trackId</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-itunes-item-from-search.html">getItunesItemFromSearch</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getItunesItemFromSearch</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.masterdetailitunes.data.ItunesItemDao$getItunesItemFromSearch(kotlin.String, kotlin.String, kotlin.String)/itunesSearch_country">itunesSearch_country</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.ainsigne.masterdetailitunes.data.ItunesItemDao$getItunesItemFromSearch(kotlin.String, kotlin.String, kotlin.String)/itunesSearch_term">itunesSearch_term</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.ainsigne.masterdetailitunes.data.ItunesItemDao$getItunesItemFromSearch(kotlin.String, kotlin.String, kotlin.String)/itunesSearch_media">itunesSearch_media</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-itunes-item/index.html"><span class="identifier">ItunesItem</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code>
+<p>Returns saved itune items to be displayed identified through its itunesSearch parameters</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-itunes-items.html">getItunesItems</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getItunesItems</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-itunes-item/index.html"><span class="identifier">ItunesItem</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code>
+<p>Returns saved itune items to be displayed ordered by its trackName</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="insert-all.html">insertAll</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">insertAll</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.masterdetailitunes.data.ItunesItemDao$insertAll(kotlin.collections.List((com.ainsigne.masterdetailitunes.data.ItunesItem)))/items">items</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-itunes-item/index.html"><span class="identifier">ItunesItem</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Saves the ituneitems entity list to room db</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,182 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ItunesConfig - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.ainsigne.masterdetailitunes.utils</a>&nbsp;/&nbsp;<a href="./index.html">ItunesConfig</a><br/>
+<br/>
+<h1>ItunesConfig</h1>
+<code><span class="keyword">class </span><span class="identifier">ItunesConfig</span></code>
+<p>Config class for saving settings and updates</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">ItunesConfig</span><span class="symbol">(</span><span class="symbol">)</span></code>
+<p>Config class for saving settings and updates</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="context.html">context</a></p>
+</td>
+<td>
+<code><span class="keyword">lateinit</span> <span class="keyword">var </span><span class="identifier">context</span><span class="symbol">: </span><a href="../../com.ainsigne.masterdetailitunes/-main-activity/index.html"><span class="identifier">MainActivity</span></a></code>
+<p>context : <a href="../../com.ainsigne.masterdetailitunes/-main-activity/index.html">MainActivity</a> context used in saving preferences</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="country-key.html">countryKey</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">countryKey</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code>
+<p><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>  country key key parameter for saving searched country</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="id-key.html">idKey</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">idKey</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code>
+<p><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>  id key parameter for saving id of itune track selected</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="media-key.html">mediaKey</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">mediaKey</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code>
+<p><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a> media key parameter for saving searched media</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="search-key.html">searchKey</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">searchKey</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code>
+<p><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>  search key parameter for saving searched term</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="time-stamp-key.html">timeStampKey</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">timeStampKey</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code>
+<p><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a> timestamp key parameter for saving timestamp when searched</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="get-country.html">getCountry</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getCountry</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span></code>
+<p>returns the searched country</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-id.html">getId</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getId</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code>
+<p>returns the id of itunes track</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-media.html">getMedia</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getMedia</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span></code>
+<p>returns the searched media</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-search.html">getSearch</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getSearch</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code>
+<p>returns the searched query</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-timestamp.html">getTimestamp</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getTimestamp</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code>
+<p>returns the timestamp when searched</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="save-country.html">saveCountry</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">saveCountry</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.masterdetailitunes.utils.ItunesConfig.Companion$saveCountry(kotlin.Int)/country">country</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>saves the searched country</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="save-id.html">saveId</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">saveId</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.masterdetailitunes.utils.ItunesConfig.Companion$saveId(kotlin.String)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span></code>
+<p>saves the id of itunes track</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="save-media.html">saveMedia</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">saveMedia</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.masterdetailitunes.utils.ItunesConfig.Companion$saveMedia(kotlin.Int)/media">media</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>saves the searched media</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="save-search.html">saveSearch</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">saveSearch</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.masterdetailitunes.utils.ItunesConfig.Companion$saveSearch(kotlin.String)/searched">searched</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>saves the searched query</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="save-timestamp.html">saveTimestamp</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">saveTimestamp</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.masterdetailitunes.utils.ItunesConfig.Companion$saveTimestamp(kotlin.String)/timeStamp">timeStamp</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span></code>
+<p>saves the timestamp when searched</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

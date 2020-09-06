@@ -1,0 +1,63 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ItunesItemsViewModel - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.ainsigne.masterdetailitunes.viewmodels</a>&nbsp;/&nbsp;<a href="./index.html">ItunesItemsViewModel</a><br/>
+<br/>
+<h1>ItunesItemsViewModel</h1>
+<code><span class="keyword">class </span><span class="identifier">ItunesItemsViewModel</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ViewModel</span></code>
+<p>The ViewModel for <a href="#">ItunesItems</a>.</p>
+<h3>Parameters</h3>
+<p><a name="repo"></a>
+<code>repo</code> - <a href="../../com.ainsigne.masterdetailitunes.interfaces/-item-repository/index.html">ItemRepository</a> common interface for the item repository so they can be interswapped with mock or real data</p>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="itune-tracks.html">ituneTracks</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">ituneTracks</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../com.ainsigne.masterdetailitunes.data/-itunes-item/index.html"><span class="identifier">ItunesItem</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code>
+<p>Returns itune items to be displayed ordered by its trackName</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="itune-track-from-id.html">ituneTrackFromId</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">ituneTrackFromId</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.masterdetailitunes.viewmodels.ItunesItemsViewModel$ituneTrackFromId(kotlin.String)/trackId">trackId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="../../com.ainsigne.masterdetailitunes.data/-itunes-item/index.html"><span class="identifier">ItunesItem</span></a><span class="symbol">&gt;</span></code>
+<p>Returns itune item identified through its trackId</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="itune-tracks-from-search.html">ituneTracksFromSearch</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">ituneTracksFromSearch</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.masterdetailitunes.viewmodels.ItunesItemsViewModel$ituneTracksFromSearch(com.ainsigne.masterdetailitunes.data.ItunesSearch)/itunesSearch">itunesSearch</span><span class="symbol">:</span>&nbsp;<a href="../../com.ainsigne.masterdetailitunes.data/-itunes-search/index.html"><span class="identifier">ItunesSearch</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../com.ainsigne.masterdetailitunes.data/-itunes-item/index.html"><span class="identifier">ItunesItem</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code>
+<p>TODO : unused</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="itunes-searches.html">itunesSearches</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">itunesSearches</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.masterdetailitunes.viewmodels.ItunesItemsViewModel$itunesSearches(com.ainsigne.masterdetailitunes.data.ItunesSearch)/itunesSearch">itunesSearch</span><span class="symbol">:</span>&nbsp;<a href="../../com.ainsigne.masterdetailitunes.data/-itunes-search/index.html"><span class="identifier">ItunesSearch</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="../../com.ainsigne.masterdetailitunes.data/-itunes-search/index.html"><span class="identifier">ItunesSearch</span></a><span class="symbol">&gt;</span></code>
+<p>Returns itunes searched to be displayed and its timestamp to when it is searched</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

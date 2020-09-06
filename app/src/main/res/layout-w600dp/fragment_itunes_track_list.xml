@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:baselineAligned="false"
+    android:divider="?android:attr/dividerHorizontal"
+    android:orientation="horizontal"
+    android:showDividers="middle"
+    tools:context=".ui.ItunesTrackListFragment">
+
+
+    <LinearLayout
+        android:layout_marginTop="52dp"
+        android:orientation="vertical"
+        android:layout_width="280dp"
+        android:layout_height="match_parent">
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/src_term"
+
+            android:layout_margin="@dimen/text_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_marginStart="@dimen/text_margin"
+            android:layout_marginEnd="@dimen/text_margin"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Spinner
+                android:layout_margin="@dimen/text_half_margin"
+                android:id="@+id/spr_type"
+                android:layout_width="0dp"
+                android:layout_weight=".4"
+                android:layout_height="wrap_content" />
+            <Spinner
+                android:layout_margin="@dimen/text_half_margin"
+                android:id="@+id/spr_countries"
+                android:layout_weight=".6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/item_list"
+            android:layout_width="@dimen/item_width"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            app:layoutManager="LinearLayoutManager"
+            tools:context="com.ainsigne.masterdetailitunes.ItemListActivity"
+            tools:listitem="@layout/item_list_content" />
+    </LinearLayout>
+
+    <!--
+      This layout is a two-pane layout for the Items master/detail flow.
+      -->
+
+    <FrameLayout
+        android:id="@+id/item_detail_container"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3" />
+</LinearLayout>
+</layout>

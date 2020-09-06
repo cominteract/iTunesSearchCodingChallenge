@@ -1,0 +1,51 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>AppDatabase - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.ainsigne.masterdetailitunes.data</a>&nbsp;/&nbsp;<a href="./index.html">AppDatabase</a><br/>
+<br/>
+<h1>AppDatabase</h1>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">AppDatabase</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">RoomDatabase</span></code>
+<p>The Room database for this app</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">AppDatabase</span><span class="symbol">(</span><span class="symbol">)</span></code>
+<p>The Room database for this app</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="itunes-item-dao.html">itunesItemDao</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">itunesItemDao</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-itunes-item-dao/index.html"><span class="identifier">ItunesItemDao</span></a></code>
+<p>the dao for room access to perform crud on <a href="../-itunes-item/index.html">ItunesItem</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="itunes-search-dao.html">itunesSearchDao</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">itunesSearchDao</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-itunes-search-dao/index.html"><span class="identifier">ItunesSearchDao</span></a></code>
+<p>the dao for room access to perform crud on <a href="../-itunes-search/index.html">ItunesSearch</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

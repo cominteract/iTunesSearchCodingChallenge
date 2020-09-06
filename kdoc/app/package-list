@@ -1,0 +1,13 @@
+$dokka.format:html
+$dokka.linkExtension:html
+$dokka.location:com.ainsigne.masterdetailitunes.utils$toStringFormatFull(java.util.Date)com.ainsigne.masterdetailitunes.utils/java.util.-date/to-string-format-full.html
+com.ainsigne.masterdetailitunes
+com.ainsigne.masterdetailitunes.adapters
+com.ainsigne.masterdetailitunes.api
+com.ainsigne.masterdetailitunes.data
+com.ainsigne.masterdetailitunes.di
+com.ainsigne.masterdetailitunes.fake
+com.ainsigne.masterdetailitunes.interfaces
+com.ainsigne.masterdetailitunes.ui
+com.ainsigne.masterdetailitunes.utils
+com.ainsigne.masterdetailitunes.viewmodels

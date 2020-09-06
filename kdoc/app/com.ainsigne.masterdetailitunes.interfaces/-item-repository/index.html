@@ -1,0 +1,111 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ItemRepository - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.ainsigne.masterdetailitunes.interfaces</a>&nbsp;/&nbsp;<a href="./index.html">ItemRepository</a><br/>
+<br/>
+<h1>ItemRepository</h1>
+<code><span class="keyword">interface </span><span class="identifier">ItemRepository</span></code>
+<p>Common interface for the item repository so they can be interswapped with mock or real data</p>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="get-itunes-item.html">getItunesItem</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getItunesItem</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.masterdetailitunes.interfaces.ItemRepository$getItunesItem(kotlin.String)/itunesId">itunesId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="../../com.ainsigne.masterdetailitunes.data/-itunes-item/index.html"><span class="identifier">ItunesItem</span></a><span class="symbol">&gt;</span></code>
+<p>Returns itune item identified through its trackId</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-itunes-item-from-search.html">getItunesItemFromSearch</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getItunesItemFromSearch</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.masterdetailitunes.interfaces.ItemRepository$getItunesItemFromSearch(com.ainsigne.masterdetailitunes.data.ItunesSearch)/itunesSearch">itunesSearch</span><span class="symbol">:</span>&nbsp;<a href="../../com.ainsigne.masterdetailitunes.data/-itunes-search/index.html"><span class="identifier">ItunesSearch</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../com.ainsigne.masterdetailitunes.data/-itunes-item/index.html"><span class="identifier">ItunesItem</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code>
+<p>Returns itune items to be displayed identified through its itunesSearch parameters</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-itunes-items.html">getItunesItems</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getItunesItems</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../com.ainsigne.masterdetailitunes.data/-itunes-item/index.html"><span class="identifier">ItunesItem</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code>
+<p>Returns itune items to be displayed ordered by its trackName</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-itunes-searches.html">getItunesSearches</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getItunesSearches</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.masterdetailitunes.interfaces.ItemRepository$getItunesSearches(com.ainsigne.masterdetailitunes.data.ItunesSearch)/itunesSearch">itunesSearch</span><span class="symbol">:</span>&nbsp;<a href="../../com.ainsigne.masterdetailitunes.data/-itunes-search/index.html"><span class="identifier">ItunesSearch</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="../../com.ainsigne.masterdetailitunes.data/-itunes-search/index.html"><span class="identifier">ItunesSearch</span></a><span class="symbol">&gt;</span></code>
+<p>Returns itunes searched to be displayed and its timestamp to when it is searched</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="insert-all.html">insertAll</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">insertAll</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.masterdetailitunes.interfaces.ItemRepository$insertAll(kotlin.collections.List((com.ainsigne.masterdetailitunes.data.ItunesItem)))/itunesItems">itunesItems</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../com.ainsigne.masterdetailitunes.data/-itunes-item/index.html"><span class="identifier">ItunesItem</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Adds the ituneitems entity list</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="insert-itunes-item.html">insertItunesItem</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">insertItunesItem</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.masterdetailitunes.interfaces.ItemRepository$insertItunesItem(com.ainsigne.masterdetailitunes.data.ItunesItem)/itunesItem">itunesItem</span><span class="symbol">:</span>&nbsp;<a href="../../com.ainsigne.masterdetailitunes.data/-itunes-item/index.html"><span class="identifier">ItunesItem</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Adds a single itune item to a mocked list</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="insert-itunes-search.html">insertItunesSearch</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">insertItunesSearch</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.masterdetailitunes.interfaces.ItemRepository$insertItunesSearch(com.ainsigne.masterdetailitunes.data.ItunesSearch)/itunesSearch">itunesSearch</span><span class="symbol">:</span>&nbsp;<a href="../../com.ainsigne.masterdetailitunes.data/-itunes-search/index.html"><span class="identifier">ItunesSearch</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Adds the itune search entity</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="../../com.ainsigne.masterdetailitunes.fake/-fake-itunes-items-repository/index.html">FakeItunesItemsRepository</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">FakeItunesItemsRepository</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">ItemRepository</span></a></code>
+<p>Repository module for handling data operations for the <a href="../../com.ainsigne.masterdetailitunes.data/-itunes-item/index.html">ItunesItem</a>.
+Repository pattern is excellent for abstracting the data access used.
+In this case we only know that we are passing parameters and info
+We don't know how it is saved</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../../com.ainsigne.masterdetailitunes.data/-itunes-items-repository/index.html">ItunesItemsRepository</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ItunesItemsRepository</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">ItemRepository</span></a></code>
+<p>Repository module for handling data operations for the <a href="../../com.ainsigne.masterdetailitunes.data/-itunes-item/index.html">ItunesItem</a>.
+Repository pattern is excellent for abstracting the data access used.
+In this case we only know that we are passing parameters and info
+We don't know how it is saved</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

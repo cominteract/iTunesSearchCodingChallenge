@@ -1,0 +1,86 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>com.ainsigne.masterdetailitunes.adapters - app</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">app</a>&nbsp;/&nbsp;<a href="./index.html">com.ainsigne.masterdetailitunes.adapters</a><br/>
+<br/>
+<h2>Package com.ainsigne.masterdetailitunes.adapters</h2>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-itunes-track-adapter/index.html">ItunesTrackAdapter</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ItunesTrackAdapter</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ListAdapter</span><span class="symbol">&lt;</span><a href="../com.ainsigne.masterdetailitunes.data/-itunes-item/index.html"><span class="identifier">ItunesItem</span></a><span class="symbol">,</span>&nbsp;<a href="-itunes-track-adapter/-view-holder/index.html"><span class="identifier">ViewHolder</span></a><span class="symbol">&gt;</span></code>
+<p>Adapter for the <a href="#">RecyclerView</a> in <a href="../com.ainsigne.masterdetailitunes.data/-itunes-item/index.html">ItunesItem</a>.
+responsible for displaying all the <a href="../com.ainsigne.masterdetailitunes.data/-itunes-item/index.html">ItunesItem</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-master-detail-tablet-interface/index.html">MasterDetailTabletInterface</a></p>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">MasterDetailTabletInterface</span></code>
+<p>interface used for listening to when the view is clicked for navigation or display of detail view</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="bind-circle-image-from-url.html">bindCircleImageFromUrl</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">bindCircleImageFromUrl</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.masterdetailitunes.adapters$bindCircleImageFromUrl(android.widget.ImageView, kotlin.String)/view">view</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/widget/ImageView.html"><span class="identifier">ImageView</span></a><span class="symbol">, </span><span class="identifier" id="com.ainsigne.masterdetailitunes.adapters$bindCircleImageFromUrl(android.widget.ImageView, kotlin.String)/imageUrl">imageUrl</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Binds the image from the url to the imageview as a circle</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="bind-image-from-url.html">bindImageFromUrl</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">bindImageFromUrl</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.masterdetailitunes.adapters$bindImageFromUrl(android.widget.ImageView, kotlin.String)/view">view</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/widget/ImageView.html"><span class="identifier">ImageView</span></a><span class="symbol">, </span><span class="identifier" id="com.ainsigne.masterdetailitunes.adapters$bindImageFromUrl(android.widget.ImageView, kotlin.String)/imageUrl">imageUrl</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Binds the image from the url to the imageview</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="bind-is-gone.html">bindIsGone</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">bindIsGone</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.masterdetailitunes.adapters$bindIsGone(android.view.View, kotlin.Boolean)/view">view</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/view/View.html"><span class="identifier">View</span></a><span class="symbol">, </span><span class="identifier" id="com.ainsigne.masterdetailitunes.adapters$bindIsGone(android.view.View, kotlin.Boolean)/isGone">isGone</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>TODO : unused</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="bind-track-genre.html">bindTrackGenre</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">bindTrackGenre</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.masterdetailitunes.adapters$bindTrackGenre(android.widget.TextView, kotlin.String)/view">view</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/widget/TextView.html"><span class="identifier">TextView</span></a><span class="symbol">, </span><span class="identifier" id="com.ainsigne.masterdetailitunes.adapters$bindTrackGenre(android.widget.TextView, kotlin.String)/text">text</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Binds the text label with given track genre</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="bind-track-price.html">bindTrackPrice</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">bindTrackPrice</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.masterdetailitunes.adapters$bindTrackPrice(android.widget.TextView, kotlin.String)/view">view</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/widget/TextView.html"><span class="identifier">TextView</span></a><span class="symbol">, </span><span class="identifier" id="com.ainsigne.masterdetailitunes.adapters$bindTrackPrice(android.widget.TextView, kotlin.String)/text">text</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Binds the text label with given track price</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

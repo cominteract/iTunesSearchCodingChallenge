@@ -1,0 +1,104 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>DatabaseModule - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.ainsigne.masterdetailitunes.di</a>&nbsp;/&nbsp;<a href="./index.html">DatabaseModule</a><br/>
+<br/>
+<h1>DatabaseModule</h1>
+<code><span class="identifier">@Module</span> <span class="keyword">class </span><span class="identifier">DatabaseModule</span></code>
+<p>Database module used for providing dependency regarding repository viewmodel and dao</p>
+<h3>Parameters</h3>
+<p><a name="appContext"></a>
+<code>appContext</code> - <a href="https://developer.android.com/reference/android/content/Context.html">Context</a> the context provided for initializing app db</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">DatabaseModule</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.masterdetailitunes.di.DatabaseModule$<init>(android.content.Context)/appContext">appContext</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/content/Context.html"><span class="identifier">Context</span></a><span class="symbol">)</span></code>
+<p>Database module used for providing dependency regarding repository viewmodel and dao</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="app-database.html">appDatabase</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">appDatabase</span><span class="symbol">: </span><a href="../../com.ainsigne.masterdetailitunes.data/-app-database/index.html"><span class="identifier">AppDatabase</span></a></code>
+<p><a href="../../com.ainsigne.masterdetailitunes.data/-app-database/index.html">AppDatabase</a> the database builder for room db</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="provide-itunes-item-factory.html">provideItunesItemFactory</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">provideItunesItemFactory</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.masterdetailitunes.di.DatabaseModule$provideItunesItemFactory(com.ainsigne.masterdetailitunes.data.ItunesItemsRepository)/itunesItemsRepository">itunesItemsRepository</span><span class="symbol">:</span>&nbsp;<a href="../../com.ainsigne.masterdetailitunes.data/-itunes-items-repository/index.html"><span class="identifier">ItunesItemsRepository</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../com.ainsigne.masterdetailitunes.viewmodels/-itunes-items-view-model-factory/index.html"><span class="identifier">ItunesItemsViewModelFactory</span></a></code>
+<p>Provides <a href="../../com.ainsigne.masterdetailitunes.viewmodels/-itunes-items-view-model-factory/index.html">ItunesItemsViewModelFactory</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="provides-itunes-item-dao.html">providesItunesItemDao</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">providesItunesItemDao</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../com.ainsigne.masterdetailitunes.data/-itunes-item-dao/index.html"><span class="identifier">ItunesItemDao</span></a></code>
+<p>Provides <a href="../../com.ainsigne.masterdetailitunes.data/-itunes-item-dao/index.html">ItunesItemDao</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="provides-itunes-item-repository.html">providesItunesItemRepository</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">providesItunesItemRepository</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.masterdetailitunes.di.DatabaseModule$providesItunesItemRepository(com.ainsigne.masterdetailitunes.data.ItunesItemDao, com.ainsigne.masterdetailitunes.data.ItunesSearchDao)/dao">dao</span><span class="symbol">:</span>&nbsp;<a href="../../com.ainsigne.masterdetailitunes.data/-itunes-item-dao/index.html"><span class="identifier">ItunesItemDao</span></a><span class="symbol">, </span><span class="identifier" id="com.ainsigne.masterdetailitunes.di.DatabaseModule$providesItunesItemRepository(com.ainsigne.masterdetailitunes.data.ItunesItemDao, com.ainsigne.masterdetailitunes.data.ItunesSearchDao)/sdao">sdao</span><span class="symbol">:</span>&nbsp;<a href="../../com.ainsigne.masterdetailitunes.data/-itunes-search-dao/index.html"><span class="identifier">ItunesSearchDao</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../com.ainsigne.masterdetailitunes.data/-itunes-items-repository/index.html"><span class="identifier">ItunesItemsRepository</span></a></code>
+<p>Provides <a href="../../com.ainsigne.masterdetailitunes.data/-itunes-items-repository/index.html">ItunesItemsRepository</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="provides-itunes-item-view-model.html">providesItunesItemViewModel</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">providesItunesItemViewModel</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.masterdetailitunes.di.DatabaseModule$providesItunesItemViewModel(com.ainsigne.masterdetailitunes.viewmodels.ItunesItemsViewModelFactory)/factory">factory</span><span class="symbol">:</span>&nbsp;<a href="../../com.ainsigne.masterdetailitunes.viewmodels/-itunes-items-view-model-factory/index.html"><span class="identifier">ItunesItemsViewModelFactory</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../com.ainsigne.masterdetailitunes.viewmodels/-itunes-items-view-model/index.html"><span class="identifier">ItunesItemsViewModel</span></a></code>
+<p>Provides <a href="../../com.ainsigne.masterdetailitunes.viewmodels/-itunes-items-view-model/index.html">ItunesItemsViewModel</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="provides-itunes-search-dao.html">providesItunesSearchDao</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">providesItunesSearchDao</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../com.ainsigne.masterdetailitunes.data/-itunes-search-dao/index.html"><span class="identifier">ItunesSearchDao</span></a></code>
+<p>Provides <a href="../../com.ainsigne.masterdetailitunes.data/-itunes-search-dao/index.html">ItunesSearchDao</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="provides-room.html">providesRoom</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">providesRoom</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../com.ainsigne.masterdetailitunes.data/-app-database/index.html"><span class="identifier">AppDatabase</span></a></code>
+<p>Provides <a href="../../com.ainsigne.masterdetailitunes.data/-app-database/index.html">AppDatabase</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/itunes_items_fragment">
+
+    <fragment
+        android:id="@+id/itunes_items_fragment"
+        android:name="com.ainsigne.masterdetailitunes.ui.ItunesTrackListFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_itunes_track_list">
+
+        <action
+            android:id="@+id/action_items_fragment_to_itunes_detail_fragment"
+            app:destination="@id/itunes_details_fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/itunes_details_fragment"
+        android:name="com.ainsigne.masterdetailitunes.ui.ItunesTrackDetailsFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_itunes_track_details">
+        <argument
+            android:defaultValue="@null"
+            app:nullable="true"
+            android:name="trackId"
+            app:argType="string" />
+
+    </fragment>
+
+
+
+
+</navigation>
