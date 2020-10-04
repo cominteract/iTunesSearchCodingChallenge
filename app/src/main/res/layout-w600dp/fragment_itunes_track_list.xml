@@ -6,8 +6,7 @@
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginLeft="16dp"
-    android:layout_marginRight="16dp"
+
     android:baselineAligned="false"
     android:divider="?android:attr/dividerHorizontal"
     android:orientation="horizontal"
@@ -16,9 +15,10 @@
 
 
     <LinearLayout
+        android:gravity="center_horizontal"
         android:layout_marginTop="52dp"
         android:orientation="vertical"
-        android:layout_width="280dp"
+        android:layout_width="@dimen/search_width"
         android:layout_height="match_parent">
         <androidx.appcompat.widget.SearchView
             android:id="@+id/src_term"
@@ -48,13 +48,14 @@
                 android:layout_height="wrap_content" />
         </LinearLayout>
         <androidx.recyclerview.widget.RecyclerView
+
             android:id="@+id/item_list"
-            android:layout_width="@dimen/item_width"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            app:layoutManager="LinearLayoutManager"
+
+            app:spanCount="2"
+            app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
             tools:context="com.ainsigne.masterdetailitunes.ItemListActivity"
             tools:listitem="@layout/item_list_content" />
     </LinearLayout>
