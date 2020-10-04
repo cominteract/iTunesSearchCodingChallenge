@@ -70,6 +70,10 @@ data class ItunesItem (
      */
     var trackHdPrice: Double = 0.0,
     /**
+     * trackBGColor [Int] the bg color of the track randomly assigned
+     */
+    var trackBGColor: Int = 0,
+    /**
      * trackHdRentalPrice [Double] the price of the itunes hd rental track
     */
     var trackHdRentalPrice: Double = 0.0,

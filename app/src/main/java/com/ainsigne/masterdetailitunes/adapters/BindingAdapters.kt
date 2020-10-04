@@ -6,6 +6,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.databinding.BindingAdapter
 import com.ainsigne.masterdetailitunes.R
+import com.ainsigne.masterdetailitunes.utils.ColorUtil
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
 import java.util.*
@@ -48,6 +49,13 @@ fun bindTrackGenre(view: TextView, text: String?) {
     }
 }
 
+
+@BindingAdapter("bindRandomColor")
+fun bindRandomColor(view: View, bgColor: Int?) {
+    bgColor?.let {
+        view.setBackgroundColor(ColorUtil.getRandomColor(bgColor))
+    }
+}
 
 /**
  * Binds random color to a view

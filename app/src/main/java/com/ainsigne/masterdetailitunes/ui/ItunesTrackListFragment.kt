@@ -152,6 +152,9 @@ class ItunesTrackListFragment : Fragment(), MasterDetailTabletInterface {
 
                 response.body()?.results?.let {
                     for(item in it){
+                        val r = Random()
+                        val num: Int = r.nextInt(20 - 1) + 1
+                        item.trackBGColor = num
                         item.artworkUrl150 = item.artworkUrl100?.replace("100x100","150x150")
                         item.artworkUrl400 = item.artworkUrl100?.replace("100x100","600x600")
                         item.itunesSearch = itunesSearch

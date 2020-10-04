@@ -13,16 +13,16 @@
 <com.google.android.material.card.MaterialCardView
         android:elevation="@dimen/text_half_margin"
         android:padding="@dimen/text_margin"
-        bindRandomColor="@{itunesItem.artworkUrl400}"
+        bindRandomColor="@{itunesItem.trackBGColor}"
         app:cardCornerRadius="4dp"
         app:strokeColor="@color/white"
         app:strokeWidth="1dp"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:onClick="@{clickListener}"
         android:padding="@dimen/text_half_margin"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <ImageView
@@ -45,7 +45,7 @@
             android:breakStrategy="simple"
             android:maxLines="4"
             android:textColor="@color/white"
-            android:layout_width="150dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_half_margin"
             android:text="@{String.valueOf(itunesItem.trackName)}"
@@ -59,7 +59,7 @@
             android:id="@+id/tv_track_price"
             android:textColor="@color/white"
             trackPrice="@{String.valueOf(itunesItem.trackPrice) + String.valueOf(itunesItem.currency)}"
-            android:layout_width="150dp"
+            android:layout_width="match_parent"
             android:maxLines="3"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_half_margin"
@@ -74,7 +74,7 @@
             android:maxLines="2"
             android:textColor="@color/white"
             trackGenre="@{itunesItem.primaryGenreName}"
-            android:layout_width="150dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_half_margin"
             style="@style/TrackPriceGenreText" />
